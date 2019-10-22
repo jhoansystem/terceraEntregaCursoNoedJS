@@ -1,0 +1,28 @@
+{{>header}}
+
+<h1>Crear curso</h1>
+
+<form action="/" method="post">
+	
+	<label for="nombreCompleto">Nombre</label>
+    <input name="nombre" type="text"  required />
+		<br>
+	<label for="password">Contraseña</label>
+    <input name="password" type="password"  required />
+		<br>
+	<label for="valor">Matematica</label>
+    <input name="matematica" type="number" required  />
+		<br>
+	<label for="valor">Ingles</label>
+    <input name="ingles" type="number" required  />
+		<br>
+	<label for="valor">Programación</label>
+    <input name="programacion" type="number" required  />
+		<br>
+	
+	<button>Crear Curso</button>
+	{{{cursosMesaje}}}
+</form>
+
+
+{{>footer}}

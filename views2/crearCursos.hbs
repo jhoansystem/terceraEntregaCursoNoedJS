@@ -1,0 +1,31 @@
+{{>header}}
+<h1>Crear curso</h1>
+
+<form action="/crearCursos" method="post">
+	<label for="id">Id</label>
+	<input name="id" type="number" required   />
+		<br>
+	<label for="nombreCompleto">Nombre curso</label>
+    <input name="nombreCompleto" type="text"  required />
+		<br>
+	<label for="descripcion">Descripción</label>
+    <input name="descripcion" type="text" required  />
+		<br>
+	<label for="valor">Valor</label>
+    <input name="valor" type="number" required  />
+		<br>
+	<label for="modalidad">Modalidad</label>
+    <select name="modalidad">
+		<option value=""></option>
+		<option value="virtual">Virtual</option>
+		<option value="presencial">Presencial</option>
+	</select>
+		<br>
+	<label for="intensidadHoraria">Intensidad horaria</label>
+	<input name="intensidadHoraria" type="number" />
+		<br>
+	<button>Crear Curso</button>
+	{{{cursosMesaje}}}
+</form>
+
+{{>footer}}

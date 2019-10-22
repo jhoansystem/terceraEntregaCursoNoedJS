@@ -1,0 +1,26 @@
+{{>header}}
+
+<h1>Crear curso</h1>
+
+<form action="/actualizar" method="post">
+	
+	<label for="nombreCompleto">Nombre curso</label>
+    <input name="nombre" type="text" value="{{nombre}}"  required />
+		<br>
+	
+	<label for="valor">Matematica</label>
+    <input name="matematica" type="number" value="{{matematica}}" required  />
+		<br>
+	<label for="valor">Ingles</label>
+    <input name="ingles" type="number" value="{{ingles}}" required  />
+		<br>
+	<label for="valor">Programación</label>
+    <input name="programacion" type="number" value="{{programacion}}" required  />
+		<br>
+	
+	<button>Crear Curso</button>
+	{{{cursosMesaje}}}
+</form>
+
+
+{{>footer}}

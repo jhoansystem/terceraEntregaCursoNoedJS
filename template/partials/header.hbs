@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+
+	{{#if sesion}}
+		<form action="/salir" method="get">
+				<a href="/actualizar">Actualizar</a>
+				<label for="nombreCompleto">{{nombre}}</label>
+				<button>Salir</button>
+		</form>	
+	{{else}}
+		<form action="/ingresar" method="post">
+	
+			<label for="nombreCompleto">Nombre</label>
+		    <input name="nombre" type="text"  required />
+				<br>
+			<label for="password">Contraseña</label>
+		    <input name="password" type="password"  required />
+			<button>Ingresar</button>
+		</form>
+	{{/if}}
+
+	{{{cursosMesaje}}}
+	
+
+	<p>Extensión universitaria</p> <a href="/">Inicio</a>
+	<a href="/vernotas">Ver notas</a>
+	<a href="/vernotas2">Ver notas2</a>
+	
+	<hr>

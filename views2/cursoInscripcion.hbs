@@ -1,0 +1,24 @@
+{{>header}}
+<h1>Inscripción a curso</h1>
+
+<form action="/cursoInscripcion" method="post">
+	<label for="idCurso" >Id Curso</label>
+	{{{selectCursos}}}
+	
+		<br>
+	<label for="documento">Documento</label>
+	<input name="documento" type="number" required  />
+		<br>
+	<label for="nombreCompleto">Nombre completo</label>
+    <input name="nombreCompleto" type="text" required  />
+		<br>
+	<label for="correo">Correo</label>
+    <input name="correo" type="text" required  />
+		<br>
+	<label for="telefono">Telefono</label>
+    <input name="telefono" type="number" required  />
+		<br>
+	<button>Inscribirme</button>
+	{{{cursosMesaje}}}
+</form>
+{{>footer}}
